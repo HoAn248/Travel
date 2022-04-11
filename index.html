@@ -51,15 +51,20 @@
             <div class="sliders">
                 <input type="radio" name="slide" id="slide-1" checked>
                 <input type="radio" name="slide" id="slide-2">
-                <div class="slides s1">
+                <input type="radio" name="slide" id="slide-3">
+                <div class="slider s1">
                     <img src="./images/ad9096c92b06e558bc17.jpg" alt="">
                 </div>
-                <div class="slides s2">
+                <div class="slider s2">
+                    <img src="./images/ad9096c92b06e558bc17.jpg" alt="">
+                </div>
+                <div class="slider s3">
                     <img src="./images/ad9096c92b06e558bc17.jpg" alt="">
                 </div>
                 <div class="navigation">
                     <label for="slide-1" class="dot"></label>
                     <label for="slide-2" class="dot"></label>
+                    <label for="slide-3" class="dot"></label>
                 </div>
             </div>
             <h2>Tour <span>Mới Nhất</span></h2>
@@ -226,6 +231,20 @@
         const scroll = document.querySelector('.on-top')
         const btn = document.querySelector('.fa-bars-staggered')
         const fillter = document.querySelector('.fillter')
+        let radio = document.querySelectorAll('.sliders input')
+        setInterval(() => {
+            for (let i = 0; i <= radio.length; i++) {
+                let number = radio[i].checked
+                if (number === true) {
+                    if (i + 1 > radio.length - 1) {
+                        radio[0].checked = true
+                    } else {
+                        radio[i + 1].checked = true
+                    }
+                    break
+                }
+            }
+        }, 5000)
         window.addEventListener('scroll', () => {
             
             scroll.classList.toggle('scroll-active', window.scrollY > 450)

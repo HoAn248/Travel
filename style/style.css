@@ -18,11 +18,13 @@ body {
 
 .container {
     width: 70%;
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 
 .bg-head {
     width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
 }
 
 .bg-head img {
@@ -37,6 +39,7 @@ body {
     background: linear-gradient(to right, #65f4cd, #4799e9);
     justify-content: space-around;
     transition: 0.5s;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .head-content .logo {
@@ -166,17 +169,29 @@ body {
     background-color: white;
     color: black;
 }
-
+@keyframes slide{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
 .main .sliders {
     width: 100%;
     position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.main .slider{
+    animation: slide 0.3s linear;
 }
 
 .main .sliders input {
     display: none;
 }
 
-.main .sliders .slides img {
+.main .sliders .slider img {
     width: 100%;
     display: block;
 }
@@ -199,7 +214,7 @@ body {
     cursor: pointer;
 }
 
-.slides {
+.slider {
     display: none;
 }
 
@@ -218,7 +233,13 @@ body {
 #slide-2:checked~.navigation label:nth-child(2) {
     background-color: red;
 }
+#slide-3:checked~.s3 {
+    display: block;
+}
 
+#slide-3:checked~.navigation label:nth-child(3) {
+    background-color: red;
+}
 .tours-list {
     width: 100%;
     display: flex;
