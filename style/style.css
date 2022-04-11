@@ -14,6 +14,7 @@ body {
     font-family: 'Fredoka', sans-serif;
     background: linear-gradient(to right, #4799e9, #65f4cd);
     position: relative;
+    user-select: none;
 }
 
 .container {
