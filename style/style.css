@@ -287,6 +287,9 @@ body {
 .main h2 {
     text-align: center;
     padding: 1rem 0;
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
 }
 
 .promote-list {
