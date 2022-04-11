@@ -58,8 +58,11 @@
     }
     
     .head-content .sign-box{
-        width: 50%;
+        width: 30%;
         margin: 1rem;
+    }
+    .head-content .sign-box button{
+        font-size: 1.2rem;
     }
     .head-content .drop-down{
         margin: 1rem;
