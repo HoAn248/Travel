@@ -1,0 +1,80 @@
+@media screen and (max-width: 900px){
+    .list-travel{
+        position: relative;
+    }
+    .list-travel i{
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        left: 101%;
+        transition: 0.3s;
+        top: 0;
+        z-index: 99999999;
+    }
+    .list-travel i:hover{
+        opacity: 0.6;
+    }
+    .main .list-travel ul{
+        background-color: rgb(63, 63, 63);
+        position: absolute;
+        left: 0;
+        z-index: 99999999;
+        top: 0;
+        opacity: 0;
+        transform: translateX(-100%);
+        display: unset;
+        transition: 0.5s;
+    }
+    .hide{
+        opacity: 1 !important;
+        transform: translateX(0%) !important;
+    }
+    .main .list-travel ul li{
+        width: auto;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    html{
+        font-size: 40%;
+    }
+}
+@media screen and (max-width: 700px){
+    .head-content{
+        flex-wrap: wrap;
+    }
+    .head-content .logo{
+        margin: 1rem;
+    }
+    .head-content .box-search{
+        width: 50%;
+        margin: 1rem;
+    }
+    
+    .head-content .sign-box{
+        width: 50%;
+        margin: 1rem;
+    }
+    .head-content .sign-box button{
+    }
+    .head-content .drop-down{
+        margin: 1rem;
+    }
+    .tours-list{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tours-list .tour{
+        margin: 2rem;
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .promote-list{
+        justify-content: center;
+    }
+    .promote-list .promote{
+        width: 80%;
+    }
+}

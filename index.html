@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
-    
+    <link rel="stylesheet" href="./style/responsive.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -36,6 +38,7 @@
         </header>
         <div class="main">
             <div class="list-travel">
+                <i class="fa-solid fa-bars-staggered"></i>
                 <ul>
                     <li>Trang chủ</li>
                     <li>Giới thiệu</li>
@@ -61,31 +64,40 @@
             </div>
             <h2>Tour <span>Mới Nhất</span></h2>
             <div class="tours-list">
-                <div class="tour">
+                <div class="tour" title="HẠ LONG - ĐẢO CÁT BÀ">
                     <img src="./images/42a4d7e2632dad73f43c.jpg" alt="">
                     <div>
-                        <h3>HẠ LONG - ĐẢO CÁT BÀ</h3>
+                        <h3 class="one-line">HẠ LONG - ĐẢO CÁT BÀ</h3>
                         <p>2 ngày 1 đêm</p>
                         <p>Giá: 1.436.004 đ</p>
                     </div>
                 </div>
-                <div class="tour">
+                <div class="tour" title="HÀ NỘI - QUAN LẠN - HẠ LONG">
                     <img src="./images/7f028d033eccf092a9dd.jpg" alt="">
                     <div>
-                        <h3>HÀ NỘI - QUAN LẠN - HẠ LONG</h3>
+                        <h3 class="one-line">HÀ NỘI - QUAN LẠN - HẠ LONG</h3>
                         <p>03 ngày / 02 đêm</p>
                         <p>Giá: 2.460.000 đ</p>
                     </div>
                 </div>
-                <div class="tour">
+                <div class="tour" title="HẠ LONG - CÚC PHƯƠNG RESORT">
                     <img src="./images/42a4d7e2632dad73f43c.jpg" alt="">
                     <div>
-                        <h3>HẠ LONG - CÚC PHƯƠNG RESORT</h3>
+                        <h3 class="one-line">HẠ LONG - CÚC PHƯƠNG RESORT</h3>
                         <p>02 ngày / 01 đêm</p>
                         <p>Giá: 1.398.000 đ</p>
                     </div>
                 </div>
             </div>
+            <!-- <div class="cards">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPwJ7_QRgqo3yv0N2iF8d1P6W4zAgjz9DCQ&usqp=CAU"
+                        alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeo0Pb2D7rvJudJRMe3rJ_--hgQhOFM66abA&usqp=CAU"
+                        alt="">
+                </div>
+
+            </div> -->
             <h2><span>Khuyến Mãi </span>Trong Tháng</h2>
             <div class="promote-list">
                 <div class="promote">
@@ -97,7 +109,8 @@
                         <h3>Tour Phú Quốc 3 ngày 2 đêm | Khám phá "Đảo Ngọc" | Khởi hành 30/4 & Hè</h3>
                         <p>Mã: Array71424</p>
                         <p>Khởi hành: Hồ Chí Minh, Thứ 6 hàng tuần & 30/4</p>
-                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
+                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i
+                                class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
                         <span>Giá 1 khách:</span>
                         <h4>4,588,000 đ</h4>
                         <h5>7,288,000 đ</h5>
@@ -113,7 +126,8 @@
                         <h3>Tour Phú Quốc 3 ngày 2 đêm | Khám phá "Đảo Ngọc" | Khởi hành 30/4 & Hè</h3>
                         <p>Mã: Array71424</p>
                         <p>Khởi hành: Hồ Chí Minh, Thứ 6 hàng tuần & 30/4</p>
-                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
+                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i
+                                class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
                         <span>Giá 1 khách:</span>
                         <h4>4,588,000 đ</h4>
                         <h5>7,288,000 đ</h5>
@@ -129,7 +143,8 @@
                         <h3>Tour Phú Quốc 3 ngày 2 đêm | Khám phá "Đảo Ngọc" | Khởi hành 30/4 & Hè</h3>
                         <p>Mã: Array71424</p>
                         <p>Khởi hành: Hồ Chí Minh, Thứ 6 hàng tuần & 30/4</p>
-                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
+                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i
+                                class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
                         <span>Giá 1 khách:</span>
                         <h4>4,588,000 đ</h4>
                         <h5>7,288,000 đ</h5>
@@ -145,7 +160,8 @@
                         <h3>Tour Phú Quốc 3 ngày 2 đêm | Khám phá "Đảo Ngọc" | Khởi hành 30/4 & Hè</h3>
                         <p>Mã: Array71424</p>
                         <p>Khởi hành: Hồ Chí Minh, Thứ 6 hàng tuần & 30/4</p>
-                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
+                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i
+                                class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
                         <span>Giá 1 khách:</span>
                         <h4>4,588,000 đ</h4>
                         <h5>7,288,000 đ</h5>
@@ -161,7 +177,8 @@
                         <h3>Tour Phú Quốc 3 ngày 2 đêm | Khám phá "Đảo Ngọc" | Khởi hành 30/4 & Hè</h3>
                         <p>Mã: Array71424</p>
                         <p>Khởi hành: Hồ Chí Minh, Thứ 6 hàng tuần & 30/4</p>
-                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
+                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i
+                                class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
                         <span>Giá 1 khách:</span>
                         <h4>4,588,000 đ</h4>
                         <h5>7,288,000 đ</h5>
@@ -177,7 +194,8 @@
                         <h3>Tour Phú Quốc 3 ngày 2 đêm | Khám phá "Đảo Ngọc" | Khởi hành 30/4 & Hè</h3>
                         <p>Mã: Array71424</p>
                         <p>Khởi hành: Hồ Chí Minh, Thứ 6 hàng tuần & 30/4</p>
-                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
+                        <p><i class="fa-solid fa-caret-right"></i>Khách sạn 3 sao <i
+                                class="fa-solid fa-caret-right"></i> Có trương trình 30/04</p>
                         <span>Giá 1 khách:</span>
                         <h4>4,588,000 đ</h4>
                         <h5>7,288,000 đ</h5>
@@ -190,10 +208,26 @@
     <i class="fa-solid fa-circle-arrow-up on-top"></i>
 
     </div>
+    <div class="fillter" style="
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.8);
+    transition: 0.3s linear;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    ">
+
+    </div>
     <script>
         const header = document.querySelector('.head-content')
         const scroll = document.querySelector('.on-top')
+        const btn = document.querySelector('.fa-bars-staggered')
+        const fillter = document.querySelector('.fillter')
         window.addEventListener('scroll', () => {
+            
             scroll.classList.toggle('scroll-active', window.scrollY > 450)
             header.classList.toggle('scroll-header', window.scrollY > 260)
         })
@@ -203,6 +237,15 @@
                 behavior: "smooth"
             })
         })
+        btn.onclick = ()=>{
+            document.querySelector('.list-travel ul').classList.toggle('hide')
+            fillter.classList.toggle('active-fillter')
+        }
+        fillter.onclick = ()=>{
+            document.querySelector('.list-travel ul').classList.remove('hide')
+            fillter.classList.remove('active-fillter')
+        }
     </script>
 </body>
+
 </html>

@@ -1,57 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
     font-family: 'Fredoka', sans-serif;
     background: linear-gradient(to right, #4799e9, #65f4cd);
+    position: relative;
 }
-.container{
+
+.container {
     width: 70%;
     margin: 0 auto;
 }
-.bg-head{
+
+.bg-head {
     width: 100%;
 }
-.bg-head img{
+
+.bg-head img {
     display: block;
     width: 100%;
 }
-.head-content{
+
+.head-content {
     padding: 1.3rem 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right ,#65f4cd, #4799e9);
+    background: linear-gradient(to right, #65f4cd, #4799e9);
     justify-content: space-around;
     transition: 0.5s;
 }
-.head-content .logo{
+
+.head-content .logo {
     width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.head-content .logo img{
+
+.head-content .logo img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     cursor: pointer;
 }
-.head-content .logo img:hover{
+
+.head-content .logo img:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.head-content .box-search{
+
+.head-content .box-search {
     width: 30%;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 2rem;
 }
-.head-content .box-search input{
+
+.head-content .box-search input {
     width: 87%;
     border-radius: 2rem 0 0 2rem;
     border-right: 0;
@@ -62,100 +75,121 @@ body{
     text-indent: 1rem;
     color: #65f4cd;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.5s;
     font-size: 1.5rem;
 }
-.head-content .box-search input:focus{
+
+.head-content .box-search input:focus {
     background-color: #65f4cd;
     color: #4799e9;
-    
+
 }
-.head-content .box-search input:focus + div{
+
+.head-content .box-search input:focus+div {
     background-color: #65f4cd;
-    
+
 }
-.head-content input:focus ~ .box-search{
+
+.head-content input:focus~.box-search {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.head-content .box-search div{
+
+.head-content .box-search div {
     width: 13%;
     background-color: #4799e9;
     border-radius: 0 2rem 2rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s;
+    transition: 0.5s;
     cursor: pointer;
 }
-.head-content .box-search div i{
+
+.head-content .box-search div i {
     font-size: 1.6rem;
     color: white;
 }
-.head-content .sign-box{
+
+.head-content .sign-box {
     width: 30%;
     display: flex;
     justify-content: space-around;
 }
-.head-content .sign-box button{
+
+.head-content .sign-box button {
     background-color: aqua;
     border: 0;
     cursor: pointer;
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
 }
-.head-content .drop-down{
+
+.head-content .drop-down {
     width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.head-content .drop-down i{
+
+.head-content .drop-down i {
     font-size: 4rem;
     cursor: pointer;
     color: white;
 }
-.main{
+
+.main {
     width: 100%;
 }
-.main .list-travel{
+
+.main .list-travel {
     width: 100%;
 }
-.main .list-travel ul{
+
+.main .list-travel ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.main .list-travel ul li{
+
+.main .list-travel ul li {
     width: 16.5%;
     font-size: 2rem;
     cursor: pointer;
     padding: 1.2rem 0;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.5s;
+    color: white;
 }
-.main .list-travel ul li:hover{
+
+.main .list-travel ul li:hover {
     background-color: white;
+    color: black;
 }
-.main .sliders{
+
+.main .sliders {
     width: 100%;
     position: relative;
 }
-.main .sliders input{
+
+.main .sliders input {
     display: none;
 }
-.main .sliders .slides img{
+
+.main .sliders .slides img {
     width: 100%;
     display: block;
 }
-.sliders .navigation{
+
+.sliders .navigation {
     display: flex;
     position: absolute;
     bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
 }
-.sliders .navigation .dot{
+
+.sliders .navigation .dot {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
@@ -164,46 +198,57 @@ body{
     border-radius: 50%;
     cursor: pointer;
 }
-.slides{
+
+.slides {
     display: none;
 }
-#slide-1:checked ~ .s1{
+
+#slide-1:checked~.s1 {
     display: block;
 }
-#slide-1:checked ~ .navigation label:first-child{
+
+#slide-1:checked~.navigation label:first-child {
     background-color: red;
 }
-#slide-2:checked ~ .s2{
+
+#slide-2:checked~.s2 {
     display: block;
 }
-#slide-2:checked ~ .navigation label:nth-child(2){
+
+#slide-2:checked~.navigation label:nth-child(2) {
     background-color: red;
 }
-.tours-list{
+
+.tours-list {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.tours-list .tour{
+
+.tours-list .tour {
     width: 31%;
     position: relative;
     overflow: hidden;
     border-radius: 0.5rem;
 }
-.tours-list .tour:hover{
-    filter: drop-shadow(0px 0px 1rem #ea6016);
+
+.tours-list .tour:hover {
+    filter: drop-shadow(0px 0px 1rem black);
 }
-.tours-list .tour:hover img{
+
+.tours-list .tour:hover img {
     transform: scale(1.1);
 }
-.tours-list .tour img{
+
+.tours-list .tour img {
     width: 100%;
     display: block;
     transition: 0.3s;
     cursor: pointer;
 }
-.tour::before{
+
+.tour::before {
     content: 'Tua Mới';
     position: absolute;
     width: 40%;
@@ -216,7 +261,8 @@ body{
     border-radius: 0 2rem 2rem 0;
     transition: 0.3s;
 }
-.tours-list .tour div{
+
+.tours-list .tour div {
     padding: 1rem;
     color: white;
     width: 100%;
@@ -225,18 +271,33 @@ body{
     left: 0;
     bottom: 0%;
 }
-.main h2{
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cards img {
+    display: block;
+    /* width: 60%; */
+}
+
+.main h2 {
     text-align: center;
     padding: 1rem 0;
 }
-.promote-list{
+
+.promote-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-.promote-list .promote{
+
+.promote-list .promote {
     margin-bottom: 2rem;
     width: 49%;
     background-color: rgb(228, 225, 222);
@@ -246,20 +307,23 @@ body{
     transition: 0.3s;
     cursor: pointer;
 }
-.promote-list .promote:hover{
-    filter: drop-shadow(0px 0px 1rem #ea6016);
+
+.promote-list .promote:hover {
+    filter: drop-shadow(0px 0px 1rem black);
 }
 
-.promote-list .promote .promote-img{
+.promote-list .promote .promote-img {
     position: relative;
     width: 30%;
     height: 100px;
 }
-.promote-list .promote .promote-img img{
+
+.promote-list .promote .promote-img img {
     display: block;
     width: 100%;
 }
-.promote-list .promote .promote-img span{
+
+.promote-list .promote .promote-img span {
     position: absolute;
     padding: 0.5rem 1rem;
     color: white;
@@ -269,28 +333,34 @@ body{
     top: 4%;
     font-size: 1rem;
 }
-.promote-list .promote .promote-content{
+
+.promote-list .promote .promote-content {
     width: 70%;
     padding: 1rem;
     position: relative;
 }
-.promote-list .promote .promote-content p{
+
+.promote-list .promote .promote-content p {
     color: rgb(68, 67, 67);
     opacity: 0.8;
 }
-.promote-list .promote .promote-content p i{
+
+.promote-list .promote .promote-content p i {
     color: green;
 }
-.promote-list .promote .promote-content h4{
+
+.promote-list .promote .promote-content h4 {
     font-size: 2rem;
     color: red;
 }
-.promote-list .promote .promote-content h5{
+
+.promote-list .promote .promote-content h5 {
     text-decoration: line-through;
     color: rgb(110, 109, 109);
     font-size: 1.4rem;
 }
-.promote-list .promote .promote-content button{
+
+.promote-list .promote .promote-content button {
     position: absolute;
     right: 4%;
     bottom: 4%;
@@ -301,16 +371,18 @@ body{
     cursor: pointer;
     color: white;
 }
-.scroll-header{
+
+.scroll-header {
     position: fixed;
-    z-index: 999999;
+    z-index: 999999999;
     top: 0;
     width: 70%;
     padding: 1.5rem 0;
-    background: linear-gradient(to top ,rgba(255, 246, 246,0),rgba(37, 37, 37,0.9));
+    background: linear-gradient(to top, rgba(255, 246, 246, 0), rgba(37, 37, 37, 0.9));
 
 }
-.on-top{
+
+.on-top {
     font-size: 4rem;
     position: fixed;
     right: 30px;
@@ -322,10 +394,30 @@ body{
     transition: 0.3s;
     display: none;
 }
-.on-top:hover{
+
+.on-top:hover {
     opacity: 0.8;
     color: #808080;
 }
-.scroll-active{
+
+.scroll-active {
     display: block;
+}
+
+.one-line {
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.list-travel i{
+    font-size: 4rem;
+    color: white;
+    text-align: right;
+    display: none;
+}
+.active-fillter{
+    transform: translateX(0%) !important;
 }
