@@ -43,8 +43,11 @@
     .container{
         width: 80% !important;
     }
+
     .head-content{
         flex-wrap: wrap;
+        width: 100%;
+        left: 0;
     }
     .head-content .logo{
         margin: 1rem;
