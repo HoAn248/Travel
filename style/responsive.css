@@ -55,8 +55,6 @@
         width: 50%;
         margin: 1rem;
     }
-    .head-content .sign-box button{
-    }
     .head-content .drop-down{
         margin: 1rem;
     }
@@ -68,9 +66,6 @@
         margin: 2rem;
         width: 70%;
     }
-    
-}
-@media screen and (max-width: 600px){
     .promote-list{
         justify-content: center;
     }

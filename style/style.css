@@ -260,6 +260,7 @@ body {
     top: 5%;
     border-radius: 0 2rem 2rem 0;
     transition: 0.3s;
+    box-shadow: rgba(255, 145, 0, 0.35) 0px 5px 15px;
 }
 
 .tours-list .tour div {
