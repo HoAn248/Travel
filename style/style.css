@@ -188,17 +188,17 @@ body {
         opacity: 1;
     }
 }
-.main .sliders {
+.sliders {
     width: 80%;
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
 }
-.main .slider{
+.slider{
     animation: slide 0.3s linear;
 }
 
-.main .sliders input {
+.sliders input {
     display: none;
 }
 
@@ -402,7 +402,6 @@ body {
     top: 0;
     width: 100%;
     padding: 1.5rem 0;
-    /* background: linear-gradient(to top, rgba(255, 246, 246, 0), rgba(37, 37, 37, 0.9)); */
     background: rgba(37, 37, 37, 0.9);
 
 }

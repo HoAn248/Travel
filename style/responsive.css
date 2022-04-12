@@ -1,7 +1,4 @@
 @media screen and (max-width: 900px){
-    .head-content{
-        position: relative;
-    }
     .list-travel{
         width: 0;
         order: 1;
