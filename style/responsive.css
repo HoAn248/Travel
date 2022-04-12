@@ -1,38 +1,59 @@
 @media screen and (max-width: 900px){
-    .list-travel{
+    .head-content{
         position: relative;
     }
+    .list-travel{
+        width: 0;
+        order: 1;
+        width: 10%;
+    }
     .list-travel i{
-        display: inline;
         cursor: pointer;
-        position: absolute;
-        left: 101%;
         transition: 0.3s;
-        top: 0;
         z-index: 99999999;
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translatey(-50%);
+        right: 3rem;
     }
     .list-travel i:hover{
         opacity: 0.6;
     }
-    .main .list-travel ul{
-        background-color: rgb(63, 63, 63);
+    .list-travel ul{
+        background-color: #242424;
         position: absolute;
-        left: 0;
         z-index: 99999999;
-        top: 0;
-        opacity: 0;
-        transform: translateX(-200%);
-        display: unset;
+        display: none;
         transition: 0.5s;
+        top: 130%;
+        border-radius: 1rem;
+    }
+    .list-travel ul::before{
+        content: '';
+        border-bottom: 1rem solid #242424;
+        border-right: 1rem solid transparent;
+        border-left: 1rem solid transparent;
+        border-top: 1rem solid transparent;
+        position: absolute;
+        top: -10%;
+        right: 5%;
     }
     .hide{
-        opacity: 1 !important;
-        transform: translateX(0%) !important;
+        display: block !important;
     }
-    .main .list-travel ul li{
+    .list-travel ul li{
         width: auto;
     }
-    
+    .sliders{
+        margin-top: 4rem;
+    }
+    .head-left{
+        width: 40%;
+    }
+    .head-right{
+        width: 40%;
+    }
 }
 @media screen and (max-width: 800px){
     html{
@@ -40,25 +61,14 @@
     }
 }
 @media screen and (max-width: 700px){
-    .container{
-        width: 80% !important;
-    }
 
-    .head-content{
-        flex-wrap: wrap;
-        width: 100%;
-        left: 0;
-    }
-    .head-content .logo{
-        margin: 1rem;
-    }
     .head-content .box-search{
-        width: 50%;
+        width: 80%;
         margin: 1rem;
     }
     
     .head-content .sign-box{
-        width: 30%;
+        width: 60%;
         margin: 1rem;
     }
     .head-content .sign-box button{
@@ -73,12 +83,12 @@
     }
     .tours-list .tour{
         margin: 2rem;
-        width: 70%;
+        width: 100%;
     }
     .promote-list{
         justify-content: center;
     }
     .promote-list .promote{
-        width: 80%;
+        width: 100%;
     }
 }
