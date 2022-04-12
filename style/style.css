@@ -125,14 +125,23 @@ body {
 }
 
 .head-content .sign-box button {
-    background-color: aqua;
+    background-color: #4799e9;
     border: 0;
     cursor: pointer;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.head-content .sign-box button:hover{
+    opacity: 0.7;
 }
 .head-content .sign-box button:nth-child(2) {
     margin-left: 1rem;
+}
+.head-content .sign-box button a{
+    text-decoration: none;
+    color: white;
 }
 .head-content .drop-down {
     width: 20%;
@@ -145,13 +154,17 @@ body {
     font-size: 4rem;
     cursor: pointer;
     color: white;
+    transition: 0.4s;
 }
-
+.head-content .drop-down i:hover{
+    opacity: 0.7;
+}
 .main {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .list-travel {
